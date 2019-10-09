@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"  class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA_Compatiable" content="ie=edge">
+
+	<title>Minial Navigation</title>
+	<link rel="stylesheet" type="text/css" href="princestyle.css">
+	<script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<style type="text/css">
+		html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+ /* background: #fff;*/
+  overflow-y: hidden;
+}
+
+.bounce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font: normal bold 4rem "Product Sans", sans-serif;
+  white-space: nowrap;
+  margin-top: 3%;
+  float: left;
+}
+
+.letter {
+  -webkit-animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+          animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+  display: inline-block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  margin-top: 0.5em;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+  font: normal bold 4rem "Product Sans", sans-serif;
+}
+.letter:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  color: #4285f4;
+}
+.letter:nth-child(2) {
+  -webkit-animation-delay: 0.0833333333s;
+          animation-delay: 0.0833333333s;
+  color: #ea4335;
+}
+.letter:nth-child(3) {
+  -webkit-animation-delay: 0.1666666667s;
+          animation-delay: 0.1666666667s;
+  color: #fbbc05;
+}
+.letter:nth-child(4) {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  color: #4285f4;
+}
+.letter:nth-child(5) {
+  -webkit-animation-delay: 0.3333333333s;
+          animation-delay: 0.3333333333s;
+  color: #34a853;
+}
+.letter:nth-child(6) {
+  -webkit-animation-delay: 0.4166666667s;
+          animation-delay: 0.4166666667s;
+  color: #ea4335;
+}
+.letter:nth-child(7) {
+  -webkit-animation-delay: 0.5066666667s;
+          animation-delay: 0.5066666667s;
+  color: #4285f4;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -1em, 0);
+            transform: translate3d(0, -1em, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1em 0.35em;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -1em, 0);
+            transform: translate3d(0, -1em, 0);
+    text-shadow: rgba(0, 0, 0, 0.4) 0 1em 0.35em;
+  }
+}
+	</style>
+</head>
+<body class="cartoon-transition">
+
+	<div class="wrapper">
+
+		<!-- <div class="outer-content">
+			<div class="title">
+				<h1>Minial Navigation</h1>
+			</div>
+		</div> -->
+
+		<div class="outer-content">
+
+			<div class="bounce"><span class="letter">W</span><span class="letter">E</span><span class="letter">L</span><span class="letter">C</span><span class="letter">O</span><span class="letter">M</span><span class="letter">E</span>
+</div>
+
+			<div class="title">
+				<div class="w3-content w3-section" style="max-width:300px">
+				  <img id="mg1" class="mySlides" src="prince/IMG_20181106_205401629.jpg" style="width:100%" height="380px">
+				  <img id="mg2" class="mySlides" src="prince/IMG_20181107_182847584.jpg" style="width:100%" height="380px">
+				  <img id="mg3" class="mySlides" src="prince/IMG_20181219_184511523.jpg" style="width:100%" height="380px">
+				  <img id="mg1" class="mySlides" src="prince/FB_IMG_1540216813664.jpg" style="width:100%" height="380px">
+				  <img id="mg2" class="mySlides" src="prince/FB_IMG_1540217073091.jpg" style="width:100%" height="380px">
+				  <img id="mg3" class="mySlides" src="prince/IMG_20181230_131842941.jpg" style="width:100%" height="380px">
+				</div>
+			</div>
+				<div id="jerry">
+					<p data-text="P R I N C E _ P I N N U">
+					<span>P</span>
+					<span>R</span>
+					<span>I</span>
+					<span>N</span>
+					<span>C</span>
+					<span>E</span>
+					<span>_</span>
+					<span>P</span>
+					<span>I</span>
+					<span>N</span>
+					<span>N</span>
+					<span>U</span>
+					</p>
+					</div>
+		</div>
+
+		<div class="menu-strip">
+			<div class="toggle-btn">
+				<ion-icon name="menu"></ion-icon>
+			</div>
+		</div>
+
+		<div class="menu">
+			<div class="images">
+
+			</div>
+
+			<div class="nav">
+				<div class="menu">
+					<ul>
+						<li>
+							<span id="order">01.</span>
+							<span id="menu"><a href="prince1.html"></a>&nbsp;Home /</span>
+							<span id="tag">intro</span>
+						</li>
+						<li>
+							<span id="order">02.</span>
+							<span id="menu"><a href="D:\cseHTML\profile\transistion\about.html">&nbsp;About Me /</a></span>
+							<span id="tag">My Story</span>
+						</li>
+						<li>
+							<span id="order">03.</span>
+							<span id="menu"><a href="D:\cseHTML\profile\ani Gallary\index.html">&nbsp;Gallary /</a></span>
+							<span id="tag">My Colletion</span>
+						</li>
+						<!-- <li>
+							<span id="order">04.</span>
+							<span id="menu"><a href="D:\cseHTML\profile\transistion\myfamily.html">&nbsp;My Family </a></span> -->
+							<!-- <span id="tag"></span> -->
+						<!-- </li> -->
+						<li>
+							<span id="order">04.</span>
+							<span id="menu"><a href="contact.html">&nbsp;Contact /</a></span>
+							<span id="tag">Say Hello</span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- <div class="media">
+					<ul>
+						<li><ion-icon name="logo-facebook"></ion-icon></li>
+						<li><ion-icon name="logo-instagram"></ion-icon></li>
+						<li><ion-icon name="logo-twitter"></ion-icon></li>
+						<li><ion-icon name="logo-youtube"></ion-icon></li>
+					</ul>
+				</div> -->
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+
+		var t1 = new TimelineMax({paused: true});
+
+		t1.to(".outer-content .title", 1, {
+			opacity: 0
+		});
+
+		t1.to(".menu", 0.5, {
+			width: "45%",
+			ease: Expo.easeInOut
+		}, "-=1");
+
+		t1.staggerFrom(".menu ul li", 1, {y: 20, opacity: 0, ease: Expo.easeInOut}, 0.1);
+
+		t1.to(".images", 1, {
+			width: "45%",
+			ease: Expo.easeInOut,
+			delay: -0.1,
+		},"-=1");
+
+		t1.reverse();
+		$(document).on("click", ".toggle-btn", function() {
+			t1.reversed(!t1.reversed());
+		});
+		$(document).on("click", "#menu", function() {
+			t1.reversed(!t1.reversed());
+		});
+
+	</script>
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
